@@ -37,7 +37,12 @@ body {
           background: white;
           border-radius: 50%;
           text-align: center;
-          font-size: 30px; }
+          font-size: 30px;
+          cursor: pointer; }
+        .container .profiles-side .profile-nav .profile-container .profile-name {
+          white-space: nowrap;
+          overflow-x: hidden;
+          cursor: pointer; }
       .container .profiles-side .profile-nav .profile-buttons-group {
         align-self: center;
         display: flex;
@@ -78,9 +83,11 @@ body {
         display: flex;
         flex-direction: row;
         cursor: pointer;
-        border-bottom: 1px solid #dbdbdb; }
+        border-bottom: 1px solid #dbdbdb;
+        transition: all 0.5s ease-in-out; }
         .container .profiles-side .recent-chats .chat.active {
-          background-color: #dbdbdb; }
+          background-color: #dbdbdb;
+          transition: all 0.5s ease-in-out; }
         .container .profiles-side .recent-chats .chat .contact-img {
           width: 40px;
           height: 40px;
@@ -116,8 +123,10 @@ body {
     .container .content-side .chat-area {
       width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column; }
+      display: none; }
+      .container .content-side .chat-area.active {
+        display: flex;
+        flex-direction: column; }
       .container .content-side .chat-area .chat-nav {
         display: flex;
         flex-direction: row;
@@ -130,7 +139,9 @@ body {
           align-items: center;
           justify-self: flex-start; }
           .container .content-side .chat-area .chat-nav .chat-profile-container .chat-back-button {
-            display: none; }
+            display: block !important;
+            color: black;
+            margin: 0px 5px 0px 5px; }
           .container .content-side .chat-area .chat-nav .chat-profile-container .chat-profile-img {
             width: 40px;
             height: 40px;
@@ -138,9 +149,13 @@ body {
             background: white;
             border-radius: 50%;
             text-align: center;
-            font-size: 30px; }
+            font-size: 30px;
+            cursor: pointer; }
           .container .content-side .chat-area .chat-nav .chat-profile-container .chat-profile-details h3.chat-profile-name {
-            font-size: 18px; }
+            font-size: 18px;
+            white-space: nowrap;
+            overflow-x: hidden;
+            cursor: pointer; }
           .container .content-side .chat-area .chat-nav .chat-profile-container .chat-profile-details p.chat-profile-status {
             font-size: 14px; }
         .container .content-side .chat-area .chat-nav .chat-profile-buttons-group {
@@ -287,6 +302,17 @@ body {
           cursor: pointer;
           font-size: 18px;
           padding: 5px 15px 5px 5px; }
+    .container .content-side .blank-page {
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .container .content-side .blank-page.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .container .content-side .blank-page h1 {
+        text-align: center; }
   @media (max-width: 940px) {
     .container .profiles-side {
       display: none;
@@ -298,11 +324,17 @@ body {
       display: none;
       width: 100%; }
       .container .content-side.active {
+        /*.chat-back-button {
+          display: block !important;
+          color: $black;
+          margin: 0px 5px 0px 5px;
+        }*/
         display: flex;
         width: 100%; }
-        .container .content-side.active .chat-back-button {
-          display: block !important;
-          color: black;
-          margin: 0px 5px 0px 5px; } }
+      .container .content-side .chat-area {
+        display: none; }
+        .container .content-side .chat-area.active {
+          display: flex;
+          flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */

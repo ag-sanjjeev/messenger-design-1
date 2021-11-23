@@ -41,6 +41,13 @@ body {
           border-radius: 50%;
           text-align: center;
           font-size: 30px;
+          cursor: pointer;
+        }
+
+        .profile-name {
+          white-space: nowrap;
+          overflow-x: hidden;          
+          cursor: pointer;
         }
       }
 
@@ -90,9 +97,11 @@ body {
         flex-direction: row;
         cursor: pointer;
         border-bottom: 1px solid $light-gray-1;
-
+        transition: all 0.5s ease-in-out;
+        
         &.active {
           background-color: $light-gray-1;
+          transition: all 0.5s ease-in-out;
         }
 
         .contact-img {
@@ -147,8 +156,12 @@ body {
     .chat-area {
       width: 100%;
       height: 100%;
-      display: flex;
-      flex-direction: column;
+      display: none;      
+
+      &.active {
+        display: flex;
+        flex-direction: column;
+      }
 
       .chat-nav {
         display: flex;
@@ -164,7 +177,9 @@ body {
           justify-self: flex-start;
 
           .chat-back-button {
-            display: none;
+            display: block !important;
+            color: $black;
+            margin: 0px 5px 0px 5px;
           }
 
           .chat-profile-img {
@@ -175,11 +190,15 @@ body {
             border-radius: 50%;
             text-align: center;
             font-size: 30px;
+            cursor: pointer;
           }
 
           .chat-profile-details {
             h3.chat-profile-name {
               font-size: 18px;
+              white-space: nowrap;
+              overflow-x: hidden;
+              cursor: pointer;
             }
 
             p.chat-profile-status {
@@ -366,6 +385,24 @@ body {
           padding: 5px 15px 5px 5px;
         }
       }
+
+    }
+
+    .blank-page {
+      width: 100%;
+      height: 100%;      
+      display: none;
+
+      &.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        text-align: center;
+      }
     }
   }
 
@@ -384,14 +421,21 @@ body {
       width: 100%;
 
       &.active {
-        .chat-back-button {
+        /*.chat-back-button {
           display: block !important;
           color: $black;
           margin: 0px 5px 0px 5px;
-        }
-
+        }*/
         display: flex;
         width: 100%;
+      }
+
+      .chat-area {
+        display: none;
+        &.active {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }
