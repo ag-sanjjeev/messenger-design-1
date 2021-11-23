@@ -215,7 +215,7 @@ body {
             font-size: 15px;
             font-weight: bold;
             text-decoration: none;
-            color: #173eeb; }
+            color: #1070ff; }
           .container .content-side .chat-area .chat-container .popup-rtl p.chat-text {
             font-size: 13px;
             line-height: 23px;
@@ -257,7 +257,7 @@ body {
             font-size: 15px;
             font-weight: bold;
             text-decoration: none;
-            color: #173eeb;
+            color: #1070ff;
             text-align: right; }
           .container .content-side .chat-area .chat-container .popup-ltr p.chat-text {
             font-size: 13px;
@@ -265,8 +265,18 @@ body {
             word-spacing: 3px; }
             .container .content-side .chat-area .chat-container .popup-ltr p.chat-text .chat-time-status {
               float: right;
+              padding: 2px 5px;
               font-size: 11px;
               color: #808080; }
+              .container .content-side .chat-area .chat-container .popup-ltr p.chat-text .chat-time-status i.bi.bi-check-all.viewed {
+                font-size: 15px;
+                color: #1070ff; }
+              .container .content-side .chat-area .chat-container .popup-ltr p.chat-text .chat-time-status i.bi.bi-check-all.received {
+                font-size: 15px;
+                color: #808080; }
+              .container .content-side .chat-area .chat-container .popup-ltr p.chat-text .chat-time-status i.bi.bi-check {
+                font-size: 15px;
+                color: #808080; }
         .container .content-side .chat-area .chat-container .chat-information-popup {
           align-self: center;
           margin: 10px;

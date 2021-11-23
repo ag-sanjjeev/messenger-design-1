@@ -79,6 +79,10 @@ chat_back_button.addEventListener('click', function (e) {
 	if (blank_page.className.indexOf('active') == -1) {
 		blank_page.classList.add('active');
 	}
+
+	chat.forEach(function(j) {
+		j.classList.remove('active');
+	});
 });
 
 console.log(chat);

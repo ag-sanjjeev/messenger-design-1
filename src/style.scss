@@ -334,8 +334,24 @@ body {
 
             .chat-time-status {
               float: right;
+              padding: 2px 5px;
               font-size: 11px;
               color: $dark-gray;
+
+              i.bi.bi-check-all.viewed {
+                font-size: 15px;
+                color: $primary;
+              }
+
+              i.bi.bi-check-all.received {
+                font-size: 15px;
+                color: $dark-gray;
+              }
+
+              i.bi.bi-check {
+                font-size: 15px;
+                color: $dark-gray;
+              }
             }
           }
         }
