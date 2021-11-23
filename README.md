@@ -36,7 +36,7 @@ It can be useful to kick start your messenger application and style up your them
 
 ## Help
 
-Any help, just find this readme file
+Any help, just find this readme file or raise an issue.
 
 ## Authors
 
