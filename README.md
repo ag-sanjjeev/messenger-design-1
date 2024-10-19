@@ -1,11 +1,3 @@
-<p align="center">
-	<img src='https://raw.githubusercontent.com/ag-sanjjeev/ag-sanjjeev/main/images/readme.png' width="200px" />
-</p>
-
-<p align="center">
-  ✨ If you like this project give a star ✨
-</p>
-
 # Messenger Design
 
 Simple nominal messenger design with HTML, Sass, Javascript
@@ -56,8 +48,8 @@ AG-Sanjjeev
 
 ## License
 
-This project is licensed under the [CC0] License - see the LICENSE.md file for details
+This project is licensed under the `CC0 License` - see the LICENSE.md file for details
 
 ## Acknowledgments
 
-Give feedback about this repository and start contribute this design.
+Use this design for your study or work as per the license, then give feedback about this repository and no future contribute needed for this design.
